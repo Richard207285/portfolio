@@ -1,0 +1,448 @@
+body{
+    background-color: rgba(233, 230, 186, 0.952);
+}
+
+
+.mainContainer{
+    margin: 15px;
+    display: flex;
+}
+
+h2{
+    cursor: pointer;
+    font-family: "Audiowide", sans-serif;
+    color: rgb(124, 103, 103);
+}
+
+.firstSection{
+    background-color: rgba(128, 128, 128, 0.425);
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profileImage img{
+    border-radius: 100px;
+}
+
+.secondSection{
+    margin-left: 50px;
+    text-align: center;
+    display: flex;
+}
+
+#profDetail{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secondSection img{
+    cursor: pointer;
+    border-radius: 600px;
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:hover{
+    padding: 2px;
+    transition: ease-in;
+    font-weight: bolder;
+    box-shadow: 0 0 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 25px;
+}
+
+.link span a:hover{
+    padding: 5px;
+    transition: ease-in;
+    font-weight: bolder;
+    box-shadow: 0 0 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 50px;
+}
+
+/* image spin starts here */
+/* .secondSection img{
+    animation: spin 10s linear infinite; 
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+
+.secondSection img{
+    background-color: coral;
+    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: coral;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: indianred;
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: darksalmon;
+        transform: rotate(180deg);
+      }
+}
+
+/* about css starts here */
+/* .aboutText{
+    margin-top: 130px;
+    margin-left: 250px;
+    width: 500px;
+}
+
+.aboutContent{
+    display: flex;
+}
+
+.aboutImage{
+    width: 300px; 
+    height: 300px; 
+    background-color: black; 
+    margin-left: 80px; 
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.aboutImage{
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    70%{
+        transform: translateY(20px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+} */
+
+/* service css starts here */
+#cd{
+    background-color: rgba(245, 245, 220, 0.479);
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: larger;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cd:hover{
+    background-color: rgba(210, 105, 30, 0.521);
+    outline: none;
+    transition: 0.5s ease-in-out;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border: 3px solid grey;
+}
+  
+
+
+/* skiils and experience css starts here */
+h2{
+    font-family: "Audiowide", sans-serif;
+}
+
+.col{
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.col:hover{
+    background-color: rgba(210, 105, 30, 0.521);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+/* blog css starts here */
+span h2, span h4{
+    text-align: center;
+}
+
+span h4{
+    margin-top: 15px;
+}
+
+span a{
+    font-weight: bold;
+}
+
+span a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* contact css starts here */
+.textContent{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.textContent button{
+    background-color: beige;
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#submit:hover{
+    color: black;
+}
+
+#email{
+    font-weight: bold;
+    color: rgba(165, 42, 42, 0.425);
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+#email:hover, #submit:hover{
+    box-shadow: 0 0 20px black;
+}
+
+#email:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.textContent input{
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+.container .m{
+    border: 2px  solid burlywood;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* text animation */
+/* @import url(https://fonts.googleapis.com/css?family=Lato:600); */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+} */
+
+/* .rotating-text {
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  transform: translateX(-80px);
+
+  p{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+
+    .word{
+      position: absolute;
+      display: flex;
+      opacity: 0;
+
+      .letter{
+        transform-origin: center center 25px;
+
+        &.out {
+          transform: rotateX(90deg);
+          transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+        }
+        &.in {
+          transition: 0.38s ease;
+        }
+        &.behind {
+          transform: rotateX(-90deg);
+        }
+      }
+    }
+  }
+}
+
+.alizarin {
+  color: #e74c3c;
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.peter-river {
+  color: #3498db;
+}
+
+.emerald {
+  color: #2ecc71;
+}
+
+.sun-flower {
+  color: #f1c40f;
+} */
+
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    outline: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+  
+#myBtn:hover {
+    background-color: white;
+    box-shadow: 1px 10px 18px 6px black;
+    color: black;
+}
+
+/* call to action button */
+.hero_btn--container{
+    position: relative;
+    width: 100px;
+    height: 140px;
+    padding: 20px 0;
+}
+
+.hero_btn--wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero_btn{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 100;
+    box-shadow: 1px 10px 18px 6px rgba(black);
+    position: absolute;
+    left: calc(50%-125px);
+    bottom: calc(100vh-70px);
+    width: 220px;
+    height: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+span{
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    font-size: inherit;
+}
+
+ .hero_btn-envelope{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.floating{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: calc(100%-100px);
+    bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    box-shadow: 1px 4px 10px 3px rgba(black);
+    margin-left: 840px;
+}
+
+.floating:hover{
+    background-color: white;
+    color: black;
+}
+
+.hero_btn-envelope{
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+}
+
+/* span{
+    visibility: hidden;
+    font-size: 0;
+} */
