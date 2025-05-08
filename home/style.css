@@ -1,0 +1,337 @@
+body{
+    background-color: rgba(233, 230, 186, 0.952);
+}
+
+#section1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div#section1 nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: bold;
+    /* align-items: center; */
+}
+
+div#section1 nav a:hover{
+    transition: 0.1s ease-in;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.mainContainer{
+    margin: 15px;
+    display: flex;
+}
+
+h2{
+    cursor: pointer;
+    font-family: "Audiowide", sans-serif;
+    color: rgb(124, 103, 103);
+}
+
+/* .firstSection{
+    background-color: rgba(128, 128, 128, 0.425);
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+} */
+
+.profileImage img{
+    border-radius: 100px;
+}
+
+.secondSection{
+    margin-left: 50px;
+    text-align: center;
+    display: flex;
+}
+
+#profDetail{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secondSection img{
+    cursor: pointer;
+    border-radius: 600px;
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+}
+
+#first a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#first a:hover{
+    padding: 2px;
+    transition: ease-in;
+    font-weight: bolder;
+    box-shadow: 0 0 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+}
+
+#first .link span a:hover{
+    transition: ease-in;
+    font-weight: bolder;
+    box-shadow: 0 0 20px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 50px;
+}
+
+#logoImage{
+    border-radius: 90px;
+}
+
+#social a{
+    color: rgba(0, 0, 0, 0.815);
+}
+
+#social a:hover{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 150px;
+}
+
+/* image spin starts here  */
+#logoImage{
+    animation: spin 10s linear infinite; 
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* service */
+#cdBody{
+    height: 350px;
+}
+
+.card-body{
+    padding-top: 130px;
+    font-weight: bold;
+}
+
+.card:hover{
+    background-color: burlywood;
+}
+
+#service i{
+    margin-left: 70px;
+}
+
+/* skill */
+div.skill .col{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.skill .col:hover{
+    background-color: rgba(210, 105, 30, 0.521);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+/* experience */
+div.exp .col{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.exp .col:hover{
+    background-color: rgba(210, 105, 30, 0.521);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+/* blog */
+div.blog h4{
+    text-align: center;
+}
+
+/* contact */
+.contact{
+    text-align: center;
+}
+
+.contact button{
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#submit:hover{
+    color: black;
+}
+
+#email{
+    font-weight: bold;
+    color: rgba(165, 42, 42, 0.425);
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+#email:hover, #submit:hover{
+    box-shadow: 0 0 20px black;
+}
+
+#email:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.contact input{
+    background-color: rgba(128, 128, 128, 0.425);
+}
+
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    outline: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+  
+#myBtn:hover {
+    background-color: white;
+    box-shadow: 1px 10px 18px 6px black;
+    color: black;
+}
+
+/* call to action button */
+.hero_btn--container{
+    position: relative;
+    width: 100px;
+    height: 140px;
+    padding: 20px 0;
+}
+
+.hero_btn--wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero_btn{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    letter-spacing: 2px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 100;
+    box-shadow: 1px 10px 18px 6px rgba(black);
+    position: absolute;
+    left: calc(50%-125px);
+    bottom: calc(100vh-70px);
+    width: 220px;
+    height: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+span{
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    font-size: inherit;
+}
+
+.hero_btn-envelope{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.floating{
+    position: fixed;
+    /* position: relative; */
+    width: 70px;
+    height: 70px;
+    left: calc(100%-100px);
+    bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    box-shadow: 1px 4px 10px 3px rgba(black);
+}
+
+.floating:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .floating{
+        display: none !important;
+    }
+}
+
+.hero_btn-envelope{
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+}
+
+/* profile details */
+.profileInfo{
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: large;
+    line-height: 150%;
+    word-spacing: 150%;
+}
+
+img#profileImage{
+    border-radius: 200px;
+}

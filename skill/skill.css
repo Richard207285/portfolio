@@ -1,0 +1,52 @@
+body{
+    background-color: rgba(233, 230, 186, 0.952);
+}
+
+#section1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: bold;
+    align-items: center;
+}
+
+nav .aTag a{
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.445);
+    padding: 5px;
+    transition: 0.1s ease-in;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+div.skill .col{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.skill .col:hover{
+    background-color: rgba(210, 105, 30, 0.521);
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
